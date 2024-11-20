@@ -3,7 +3,7 @@ import { Code2, Database, Layout } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className="min-h-screen pt-16 bg-gradient-to-b from-white to-gray-50">
+    <section className="min-h-screen pt-16 bg-gradient-to-b heroSection" >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -47,7 +47,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 + index * 0.1, duration: 0.5 }}
-              className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow"
+              className="p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow card"
             >
               <div className="text-[#853dcc] mb-4 flex justify-center">
                 {item.icon}

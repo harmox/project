@@ -1,22 +1,23 @@
 import { motion } from 'framer-motion';
 import { ExternalLink, Github } from 'lucide-react';
+
 //TODO FIX PROJECTS
 const projects = [
   {
-    title: "E-Commerce Platform",
-    description: "Full-stack e-commerce solution built with Node.js, React, and MongoDB. Features include user authentication, product management, and payment integration.",
-    image: "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=800",
-    tags: ["Node.js", "React", "MongoDB", "TypeScript"],
-    githubLink: "#",
-    liveLink: "#"
+    title: "Instagram Unfollowers",
+    description: "Full-stack solution built with Node.js, React, MongoDB and Stripe. Features include user authentication, management, and payment integration. ",
+    image: "https://i.ibb.co/s6M4sZT/unfollowers.png",
+    tags: ["Node.js", "React", "MongoDB", "Stripe"],
+    githubLink: "https://github.com/harmox/unfollow",
+    liveLink: "https://traitors-1fca9.web.app/"
   },
   {
-    title: "Task Management System",
-    description: "Real-time task management application with collaborative features. Built using MERN stack with TypeScript and WebSocket integration.",
-    image: "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=format&fit=crop&q=80&w=800",
-    tags: ["React", "Node.js", "MongoDB", "WebSocket"],
-    githubLink: "#",
-    liveLink: "#"
+    title: "Beauty salon",
+    description: "Everything is fully customizable and dynamically managed by the owner through a high-privilege account. Users can easily book appointments and leave reviews, while added workers can set discounts and manage their appointments and details page.",
+    image: "https://i.ibb.co/F8H48Nm/beni.png",
+    tags: ["React", "Node.js", "MongoDB"],
+    githubLink: "https://github.com/harmox/beniNails",
+    liveLink: "https://beni-nails.web.app"
   },
   {
     title: "Analytics Dashboard",
@@ -30,8 +31,9 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="projects" className="py-20 projects">
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -44,7 +46,7 @@ export default function Projects() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
           {projects.map((project, index) => (
             <motion.div
               key={index}
@@ -75,14 +77,14 @@ export default function Projects() {
                   ))}
                 </div>
                 <div className="flex space-x-4">
-                  <a
+                  <a target="blank"
                     href={project.githubLink}
                     className="flex items-center text-gray-600 hover:text-[#853dcc] transition-colors"
                   >
                     <Github className="h-5 w-5 mr-2" />
                     Code
                   </a>
-                  <a
+                  <a target="blank"
                     href={project.liveLink}
                     className="flex items-center text-gray-600 hover:text-[#853dcc] transition-colors"
                   >
