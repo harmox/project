@@ -25,6 +25,7 @@ const skills = [
 }));
 
 export default function Skills() {
+  
   const [typedText, setTypedText] = useState('');
   const [showSkills, setShowSkills] = useState(false);
   const text = 'function helloWorld(){\nconsole.log("Hello world!")\n}\nhelloWorld()';
@@ -125,9 +126,12 @@ export default function Skills() {
                   <h2 className="text-6xl font-bold text-transparent mb-4 stroke-white">
                     Technical Skills
                   </h2>
-                  <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-                    A comprehensive overview of my expertise in full-stack development.
-                  </p>
+                  <p
+  className="text-xl text-white max-w-2xl mx-auto"
+  style={{ textShadow: "1px 1px black" }}
+>
+  A comprehensive overview of my expertise in full-stack development.
+</p>
                 </motion.div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

@@ -41,7 +41,7 @@ export default function Projects() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Featured Projects</h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl max-w-2xl mx-auto">
             Here are some of my recent projects that showcase my technical skills and problem-solving abilities.
           </p>
         </motion.div>

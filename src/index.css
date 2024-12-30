@@ -76,23 +76,17 @@ body {
   }
 }
 
-.projects,
-.heroSection {
+.projects {
   position: relative;
 }
 
-.projects::before,
-.heroSection::before {
+.projects::before {
   content: '';
   position: absolute;
   inset: 0;
   z-index: -1;
   mask-size: cover;
   mask-position: center;
-
-}
-
-.projects::before {
   background: url(https://images.pexels.com/photos/1181271/pexels-photo-1181271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
   mask-image: url(https://static.vecteezy.com/system/resources/thumbnails/013/862/437/small/black-ink-brush-multiply-transparency-free-png.png);
   background-size: cover;
@@ -101,19 +95,50 @@ body {
   @media (max-width:800px) {
     background: none;
   }
+
 }
 
 
 
-.heroSection::before {
+.heroSection {
+  position: relative;
   background-image: url(https://www.pngplay.com/wp-content/uploads/2/Hacker-PNG-Background.png);
-  mask-image: url(gifPort.gif);
   background-repeat: no-repeat;
   background-size: 40%;
   background-position: -10%;
+  z-index: -1;
 
   @media (max-width:800px) {
     background-size: 80%;
     background-position: -100%;
   }
+}
+
+@keyframes paintReveal {
+  from {
+    mask-position: 100% 0;
+    -webkit-mask-position: 100% 0;
+  }
+
+  to {
+    mask-position: 0 0;
+    -webkit-mask-position: 0 0;
+  }
+}
+
+.newMasker {
+  mask-image: url(gifPort.gif);
+  -webkit-mask-image: url(gifPort.gif);
+  mask-origin: border-box;
+  -webkit-mask-origin: border-box;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-size: cover;
+  -webkit-mask-size: cover;
+  animation: paintReveal 2s ease-in-out forwards;
+  -webkit-animation: paintReveal 2s ease-in-out forwards;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
