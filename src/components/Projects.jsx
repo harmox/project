@@ -15,23 +15,23 @@ const projects = [
     title: "Beauty salon",
     description: "Everything is fully customizable and dynamically managed by the owner through a high-privilege account. Users can easily book appointments and leave reviews, while added workers can set discounts and manage their appointments and details page.",
     image: "https://i.ibb.co/F8H48Nm/beni.png",
-    tags: ["React", "Node.js", "MongoDB"],
+    tags: ["React", "Node.js", "MongoDB","Twillio"],
     githubLink: "https://github.com/harmox/beniNails",
     liveLink: "https://beni-nails.web.app"
   },
   {
-    title: "Analytics Dashboard",
-    description: "Interactive dashboard for visualizing business metrics. Features real-time data updates and customizable charts.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
-    tags: ["TypeScript", "React", "Node.js", "D3.js"],
-    githubLink: "#",
-    liveLink: "#"
+    title: "Hiking",
+    description: "My first project. NON-responsive design.",
+    image: "https://i.ibb.co/TgcHXJW/hiking.png",
+    tags: ["React", "Node.js", "MongoDB"],
+    githubLink: "https://github.com/harmox/hinking-project",
+    liveLink: "https://hiking-1212.web.app/"
   }
 ];
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-20 projects">
+    <section id="projects" className="py-20">
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
         <motion.div
@@ -54,7 +54,7 @@ export default function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow"
+              className="bg-[rgba(240,248,255,0.9)] rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow"
             >
               <div className="relative h-48 overflow-hidden">
                 <img
@@ -65,7 +65,7 @@ export default function Projects() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                <p className="text-gray-600 mb-4">{project.description}</p>
+                <p className="text-gray-600 mb-4  max-h-[150px] min-h-[150px]">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag, tagIndex) => (
                     <span

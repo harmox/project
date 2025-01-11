@@ -6,7 +6,8 @@ const skills = [
     category: "Frontend",
     items: [
       { name: "React", level: 95 },
-      { name: "HTML/CSS", level: 95 },
+      { name: "HTML", level: 95 },
+      { name: "CSS/Tailwind", level: 95 },
       { name: "TypeScript", level: 70 }
     ]
   },
@@ -16,7 +17,7 @@ const skills = [
       { name: "Node.js", level: 90 },
       { name: "MongoDB", level: 85 },
       { name: "RESTful APIs", level: 85 },
-      { name: "Express.js", level: 80 }
+      { name: "Express.js", level: 90 }
     ]
   }
 ].map(category => ({
@@ -144,7 +145,8 @@ export default function Skills() {
                       transition={{ delay: categoryIndex * 0.1 }}
                       className="bg-gray-900/50 backdrop-blur-sm rounded-xl p-6 border border-[#853dcc]/20"
                     >
-                      <h3 className="text-xl font-semibold mb-6 text-center text-[#853dcc]">
+                      <h3 className="text-xl font-semibold mb-6 text-center text-[#853dcc]"
+                       style={{ textShadow: "1px 1px black" }}>
                         {category.category}
                       </h3>
                       <div className="space-y-4">

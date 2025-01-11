@@ -33,14 +33,14 @@ export default function Header() {
           animate={{ opacity: 1, y: 0 }}
           className="hidden md:flex items-center space-x-6 lg:space-x-8"
         >
+          <a href="#skills" className="text-gray-700 hover:text-[#853dcc] transition-colors">
+            Skills
+          </a>
           <a href="#about" className="text-gray-700 hover:text-[#853dcc] transition-colors">
             About
           </a>
           <a href="#projects" className="text-gray-700 hover:text-[#853dcc] transition-colors">
             Projects
-          </a>
-          <a href="#skills" className="text-gray-700 hover:text-[#853dcc] transition-colors">
-            Skills
           </a>
           <a href="#contact" className="text-gray-700 hover:text-[#853dcc] transition-colors">
             Contact

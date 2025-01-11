@@ -56,7 +56,6 @@ export default function CyberSecurity() {
                     >
                         <ul className="list-disc list-inside text-left max-w-2xl mx-auto text-2xl font-mono " style={{ textShadow: "0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00" }}>
                             <li>Security Information and Event Management</li>
-                            <li>Cloud Security</li>
                             <li>Incident Response</li>
                             <li>Reconnaissance</li>
                             <li>Vulnerability Scanning and Reporting</li>
