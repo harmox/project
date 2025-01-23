@@ -13,7 +13,7 @@ export default function Hero() {
           <h1 className="text-5xl font-bold text-gray-900 mb-6">
             MERN Stack Developer
           </h1>
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto text-grey"  style={{ textShadow: "1px 1px black" }}>
             Specializing in Node.js, React, MongoDB, and TypeScript. Building robust and scalable web applications with modern technologies.
           </p>
         </motion.div>

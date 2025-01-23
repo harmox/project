@@ -15,13 +15,21 @@ const projects = [
     title: "Beauty salon",
     description: "Everything is fully customizable and dynamically managed by the owner through a high-privilege account. Users can easily book appointments and leave reviews, while added workers can set discounts and manage their appointments and details page.",
     image: "https://i.ibb.co/F8H48Nm/beni.png",
-    tags: ["React", "Node.js", "MongoDB","Twillio"],
+    tags: ["React", "Node.js", "MongoDB", "Twillio"],
     githubLink: "https://github.com/harmox/beniNails",
     liveLink: "https://beni-nails.web.app"
   },
   {
+    title: "Interior design",
+    description: "A Next.js web application that allows users to book appointments and contact us directly through an on-site form.",
+    image: "https://www.trade4asia.com/catalougeimage/image-one.jpg",
+    tags: ["Next.js"],
+    githubLink: "https://github.com/harmox/homeinterior",
+    liveLink: "https://homeinterior-seven.vercel.app/"
+  },
+  {
     title: "Hiking",
-    description: "My first project. NON-responsive design.",
+    description: "A beginner project that provides weather information for user-added destinations based on their latitude and longitude. Note: This project features a non-responsive design.",
     image: "https://i.ibb.co/TgcHXJW/hiking.png",
     tags: ["React", "Node.js", "MongoDB"],
     githubLink: "https://github.com/harmox/hinking-project",
@@ -31,7 +39,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-20">
+    <section id="projects" className="py-20 projectsOfStcih">
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
         <motion.div
@@ -54,7 +62,7 @@ export default function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="bg-[rgba(240,248,255,0.9)] rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow"
+              className="bg-[rgba(240,248,255,0.6)] rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow"
             >
               <div className="relative h-48 overflow-hidden">
                 <img
@@ -65,7 +73,9 @@ export default function Projects() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                <p className="text-gray-600 mb-4  max-h-[150px] min-h-[150px]">{project.description}</p>
+                <div className="text-gray-600 mb-4 max-h-[120px] min-h-[120px] overflow-y-auto">
+                  <p>{project.description}</p>
+                </div>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag, tagIndex) => (
                     <span
