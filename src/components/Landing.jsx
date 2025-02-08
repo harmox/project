@@ -46,8 +46,8 @@ export default function Landing() {
   </h1>
   <div className="flex flex-col md:flex-row justify-center items-center w-full px-4 relative">
     <img
-      className="w-48 sm:w-64 md:w-80 lg:w-96 mx-auto md:mr-8"
-      src="https://i.ibb.co/2qYhFx1/my-Photo-removebg-preview.png"
+      className="w-48 sm:w-64 md:w-80 lg:w-96 mx-auto md:mr-8 rounded-lg"
+      src="https://i.ibb.co/tTPvSQXs/CHC-2591.jpg"
       alt="My Photo"
     />
     <div className="w-full mt-8 md:mt-0">

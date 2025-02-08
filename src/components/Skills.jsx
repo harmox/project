@@ -8,7 +8,8 @@ const skills = [
       { name: "React", level: 95 },
       { name: "HTML", level: 95 },
       { name: "CSS/Tailwind", level: 95 },
-      { name: "TypeScript", level: 70 }
+      { name: "TypeScript", level: 70 },
+      { name: "Three", level: 70 }
     ]
   },
   {
@@ -26,7 +27,7 @@ const skills = [
 }));
 
 export default function Skills() {
-  
+
   const [typedText, setTypedText] = useState('');
   const [showSkills, setShowSkills] = useState(false);
   const text = 'function helloWorld(){\nconsole.log("Hello world!")\n}\nhelloWorld()';
@@ -128,11 +129,11 @@ export default function Skills() {
                     Technical Skills
                   </h2>
                   <p
-  className="text-xl text-white max-w-2xl mx-auto"
-  style={{ textShadow: "1px 1px black" }}
->
-  A comprehensive overview of my expertise in full-stack development.
-</p>
+                    className="text-xl text-white max-w-2xl mx-auto"
+                    style={{ textShadow: "1px 1px black" }}
+                  >
+                    A comprehensive overview of my expertise in full-stack development.
+                  </p>
                 </motion.div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -146,7 +147,7 @@ export default function Skills() {
                       className="bg-gray-900/50 backdrop-blur-sm rounded-xl p-6 border border-[#853dcc]/20"
                     >
                       <h3 className="text-xl font-semibold mb-6 text-center text-[#853dcc]"
-                       style={{ textShadow: "1px 1px black" }}>
+                        style={{ textShadow: "1px 1px black" }}>
                         {category.category}
                       </h3>
                       <div className="space-y-4">
