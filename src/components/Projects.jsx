@@ -1,8 +1,17 @@
 import { motion } from 'framer-motion';
 import { ExternalLink, Github } from 'lucide-react';
+import React from 'react';
 
 //TODO FIX PROJECTS
 const projects = [
+  {
+    title: "Beauty salon",
+    description: "Everything is fully customizable and dynamically managed by the owner through a high-privilege account. Users can easily book appointments and leave reviews, while added workers can set discounts and manage their appointments and details page.",
+    image: "https://i.ibb.co/F8H48Nm/beni.png",
+    tags: ["React", "Node.js", "MongoDB", "Twillio"],
+    githubLink: "https://github.com/harmox/beniNails",
+    liveLink: "https://beni-nails.web.app"
+  },
   {
     title: "Instagram Unfollowers",
     description: "Full-stack solution built with Node.js, React, MongoDB and Stripe. Features include user authentication, management, and payment integration. ",
@@ -12,12 +21,12 @@ const projects = [
     liveLink: "https://traitors-1fca9.web.app/"
   },
   {
-    title: "Beauty salon",
-    description: "Everything is fully customizable and dynamically managed by the owner through a high-privilege account. Users can easily book appointments and leave reviews, while added workers can set discounts and manage their appointments and details page.",
-    image: "https://i.ibb.co/F8H48Nm/beni.png",
-    tags: ["React", "Node.js", "MongoDB", "Twillio"],
-    githubLink: "https://github.com/harmox/beniNails",
-    liveLink: "https://beni-nails.web.app"
+    title: "Games",
+    description: "Tekken - built using canvas draw.  \n Snake - built with Three.js \n Tic Tac Toe - built with vanilla JavaScript.",
+    image: "https://i.ibb.co/qYXhCcYC/Untitled.png",
+    tags: ["Three", "Vanilla"],
+    githubLink: "https://github.com/harmox/gamesJS",
+    liveLink: "https://vanila-games.web.app/"
   },
   {
     title: "Interior design",
@@ -74,7 +83,14 @@ export default function Projects() {
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
                 <div className="text-gray-600 mb-4 max-h-[120px] min-h-[120px] overflow-y-auto">
-                  <p>{project.description}</p>
+                  <p>
+                    {project.description.split("\n").map((line, index) => (
+                      <React.Fragment key={index}>
+                        {line}
+                        <br />
+                      </React.Fragment>
+                    ))}
+                  </p>
                 </div>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag, tagIndex) => (
