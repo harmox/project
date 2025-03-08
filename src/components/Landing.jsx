@@ -31,7 +31,6 @@ const pastLearn = [
 const currentLearning = [
   { name: "National security-bachelor degree", at: "G. S. Rakovski Military Academy" },
   { name: "Compromising Platforms", at: "Softuni" },
-  { name: "Web Security ", at: "PortSwigger" },
 ]
 export default function Landing() {
 

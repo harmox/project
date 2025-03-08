@@ -3,7 +3,7 @@ import { Drama, Shield } from 'lucide-react';
 export default function CyberSecurity() {
     return (
         <>
-            <section className="min-h-screen pt-16 bg-gradient-to-b heroSection" >
+            <section className="min-h-screen pt-16 bg-gradient-to-b heroSection">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 text-center">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
@@ -21,6 +21,7 @@ export default function CyberSecurity() {
 
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                        
                         {[
                             {
                                 icon: <Drama className="h-10 w-10" />,

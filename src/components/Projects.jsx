@@ -30,7 +30,7 @@ const projects = [
   },
   {
     title: "Interior design",
-    description: "A Next.js web application that allows users to book appointments and contact us directly through an on-site form.",
+    description: "A Next.js web application that allows users to book appointments and contact us directly through an on-site form. This is a sample site and, as such, the origin cannot be disclosed.",
     image: "https://www.trade4asia.com/catalougeimage/image-one.jpg",
     tags: ["Next.js"],
     githubLink: "https://github.com/harmox/homeinterior",

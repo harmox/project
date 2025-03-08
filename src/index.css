@@ -112,7 +112,6 @@ body {
   background-repeat: no-repeat;
   background-size: 40%;
   background-position: -10%;
-  z-index: -1;
 
   @media (max-width:800px) {
     background-size: 80%;

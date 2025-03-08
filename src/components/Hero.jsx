@@ -3,7 +3,7 @@ import { Code2, Database, Layout } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className="min-h-screen pt-16 bg-gradient-to-b projects" >
+    <section className="min-h-screen pt-16 bg-gradient-to-b projects relative" >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
